@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+h1{
+  text-align: center;
+  font-family: Manrope;
+  font-weight: 200;
+}
+
+.imgBox{
+  margin: 0px auto;
+  width: 90vw;
+  height: 85vh;
+  border: 1px solid black;
+  background-color: rgb(149, 149, 149);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  position: relative;
+}
+
+.sliders{
+  font-size: 2.5rem;
+  color: black;
+  height: 70vh;
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliders button{
+  border:none;
+  background: transparent;
+  font-size: 1.5em;
+  height: 85vh;
+  width: 5vw;
+  transition: background-color 0.2s ease-in-out;
+  z-index: 1;
+  color: rgb(191, 191, 191);
+}
+
+.sliders button:hover{
+  background-color: rgb(0,0,0,0.3);
+  color: rgb(211, 208, 208)
+}
+
+.images{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+img{
+  width: 100%;
+  height: 100%; 
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition: translate 500ms ease-in-out;
+}
+
+.buttons{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0,0,0,0.5);
+  height: 8%;
+}
+
+.image-button{
+  width: 5%;
+  background-color: rgba(224, 223, 223, 0.1);
+  color: white;
+  border: none;
+  margin: 0 2%;
+  border-radius: 5px;
+}
+
+.image-button:hover{
+  background-color: rgb(0,0,0,0.3);
+}
+
+.img-container{
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
